@@ -34,6 +34,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAk-N2-2O1">
                                                     <rect key="frame" x="309" y="0.0" width="51" height="33"/>
+                                                    <connections>
+                                                        <action selector="deviceIsOnSwitchButton:" destination="lPX-Lu-gGv" eventType="valueChanged" id="7rN-X2-BOy"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </stackView>
