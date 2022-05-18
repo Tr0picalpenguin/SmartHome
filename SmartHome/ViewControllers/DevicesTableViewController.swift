@@ -36,8 +36,11 @@ class DevicesTableViewController: UITableViewController {
         alertController.addTextField { textField in
             textField.placeholder = "New device name"
         }
-        let dismissAction = UIAlertAction(title: "Create", style: .default) { _ in
-            guard let contentTextField = alertController.textFields?.first,
+        let dismissAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(dismissAction)
+        let confirmAction = UIAlertAction(title: "Create", style: .default) { _ in
+            
+        guard let contentTextField = alertController.textFields?.first,
                   let name = contentTextField.text else { return }
             
             DeviceController.sharedInstance.create(name: name)
