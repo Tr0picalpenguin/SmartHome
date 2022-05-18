@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="lPX-Lu-gGv" customClass="DeviceTableViewCell" customModule="SmartHome" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deviceCell" rowHeight="71" id="lPX-Lu-gGv" customClass="DeviceTableViewCell" customModule="SmartHome" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lPX-Lu-gGv" id="7EY-iJ-DRR">
@@ -57,10 +57,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Smart Home" id="AuD-dW-xDx">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FVp-UD-aqM"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FVp-UD-aqM">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="Pkg-7v-9hk" id="RX5-Ix-99p"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQa-gO-cce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Pkg-7v-9hk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1584.057971014493" y="-192.1875"/>
         </scene>

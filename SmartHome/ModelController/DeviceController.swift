@@ -46,7 +46,7 @@ class DeviceController {
             let jsonData = try JSONEncoder().encode(devices)
             try jsonData.write(to: url)
         } catch {
-            print("Error saving the device!")
+            print("Error saving device!")
         }
     }
     
@@ -61,4 +61,4 @@ class DeviceController {
         }
     }
     
-}
+} // End of class
