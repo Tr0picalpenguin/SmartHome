@@ -8,9 +8,9 @@
 import Foundation
 
 
-class Device {
+class Device: Codable {
     let name: String
-    let isOn: Bool
+    var isOn: Bool
     
     init(name: String, isOn: Bool = false) {
         self.name = name
