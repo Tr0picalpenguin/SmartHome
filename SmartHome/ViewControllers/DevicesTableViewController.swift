@@ -26,7 +26,7 @@ class DevicesTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "deviceCell", for: indexPath) as? DeviceTableViewCell else { return UITableViewCell() }
 
         let device = DeviceController.sharedInstance.devices[indexPath.row]
-        
+        cell.updateViews(device: device)
         return cell
     }
     

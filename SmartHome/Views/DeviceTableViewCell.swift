@@ -13,4 +13,15 @@ class DeviceTableViewCell: UITableViewCell {
     @IBOutlet weak var toggleSwitch: UISwitch!
     
 
-}
+    
+    func updateViews(device: Device) {
+        deviceNameLabel.text = device.name
+        toggleSwitch.isOn = device.isOn
+        
+        
+    }
+    
+    
+    
+    
+} // End of class
