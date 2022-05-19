@@ -50,10 +50,6 @@ class DevicesTableViewController: UITableViewController {
         present(alertController, animated: true)
     }
     
-    
-    
-    
-    
     @IBAction func addButtonTapped(_ sender: Any) {
         presentNewDeviceAlertController()
     }
@@ -73,3 +69,12 @@ class DevicesTableViewController: UITableViewController {
 
    
 } // End of class
+
+extension DevicesTableViewController: DeviceTableViewCellDelegate {
+    func isOnSwitchToggled(_ cell: DeviceTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        let device = DeviceController.sharedInstance.devices[indexPath.row]
+        DeviceController.sharedInstance.toggleIsOn(device: device)
+        cell.updateViews(device: device)
+    }
+}

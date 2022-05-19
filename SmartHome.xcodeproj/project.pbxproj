@@ -11,6 +11,7 @@
 		EDA2C39528359351006CE083 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C39428359351006CE083 /* Device.swift */; };
 		EDA2C397283593F5006CE083 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C396283593F5006CE083 /* DeviceController.swift */; };
 		EDA2C39928359C1C006CE083 /* DevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C39828359C1C006CE083 /* DevicesTableViewController.swift */; };
+		EDA2C39E2836B93A006CE083 /* ToggleAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA2C39D2836B93A006CE083 /* ToggleAllViewController.swift */; };
 		F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F027729ACE0021C4E0 /* AppDelegate.swift */; };
 		F78B15F327729ACE0021C4E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */; };
 		F78B15F827729ACE0021C4E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78B15F627729ACE0021C4E0 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		EDA2C39428359351006CE083 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		EDA2C396283593F5006CE083 /* DeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
 		EDA2C39828359C1C006CE083 /* DevicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewController.swift; sourceTree = "<group>"; };
+		EDA2C39D2836B93A006CE083 /* ToggleAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleAllViewController.swift; sourceTree = "<group>"; };
 		F78B15ED27729ACE0021C4E0 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78B15F027729ACE0021C4E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78B15F227729ACE0021C4E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				EDA2C39828359C1C006CE083 /* DevicesTableViewController.swift */,
+				EDA2C39D2836B93A006CE083 /* ToggleAllViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F78B15F127729ACE0021C4E0 /* AppDelegate.swift in Sources */,
+				EDA2C39E2836B93A006CE083 /* ToggleAllViewController.swift in Sources */,
 				EDA2C39328359255006CE083 /* DeviceTableViewCell.swift in Sources */,
 				EDA2C39928359C1C006CE083 /* DevicesTableViewController.swift in Sources */,
 				EDA2C397283593F5006CE083 /* DeviceController.swift in Sources */,

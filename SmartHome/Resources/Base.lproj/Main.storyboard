@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +11,7 @@
         <!--Smart Home-->
         <scene sceneID="QS3-W1-DHp">
             <objects>
-                <tableViewController id="IFz-ge-UWI" sceneMemberID="viewController">
+                <tableViewController id="IFz-ge-UWI" customClass="DevicesTableViewController" customModule="SmartHome" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Hwz-k5-eOT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,15 +63,29 @@
                     <navigationItem key="navigationItem" title="Smart Home" id="AuD-dW-xDx">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FVp-UD-aqM">
                             <connections>
-                                <action selector="addButtonTapped:" destination="Pkg-7v-9hk" id="RX5-Ix-99p"/>
+                                <action selector="addButtonTapped:" destination="IFz-ge-UWI" id="gUz-Ib-UeQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQa-gO-cce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Pkg-7v-9hk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1584.057971014493" y="-192.1875"/>
+        </scene>
+        <!--Toggle All View Controller-->
+        <scene sceneID="Yu0-gu-GBq">
+            <objects>
+                <viewController id="ias-vO-Noi" customClass="ToggleAllViewController" customModule="SmartHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5S4-up-mMN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IA9-Pg-pSO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fvr-02-aDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2306" y="-192"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uvJ-Ve-9L2">

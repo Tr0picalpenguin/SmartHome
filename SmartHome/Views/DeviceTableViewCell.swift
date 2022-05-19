@@ -23,8 +23,6 @@ class DeviceTableViewCell: UITableViewCell {
     func updateViews(device: Device) {
         deviceNameLabel.text = device.name
         toggleSwitch.isOn = device.isOn
-        
-        
     }
     
     @IBAction func deviceIsOnSwitchButton(_ sender: Any) {
