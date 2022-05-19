@@ -14,6 +14,9 @@ class DevicesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.deviceController = DeviceController()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(turnAllDevicesOn), name: TurnAllOnNotificationName, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(turnAllDevicesOff), name: TurnAllOffNotificationName, object: nil)
     }
 
     // MARK: - Table view data source
@@ -27,6 +30,18 @@ class DevicesTableViewController: UITableViewController {
         cell.updateViews(device: device)
         cell.delegate = self
         return cell
+    }
+    
+    @objc func turnAllDevicesOn() {
+        print("Turning All Devices On")
+        deviceController.toggleAllDevicesOn(on: true)
+        tableView.reloadData()
+    }
+    
+    @objc func turnAllDevicesOff() {
+        print("Turning All Devices Off")
+        deviceController.toggleAllDevicesOn(on: false)
+        tableView.reloadData()
     }
     
     /// Presents the create new device alert controller
